@@ -1,0 +1,541 @@
+/*Fonte*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+/*Variáveis*/
+:root{
+    --principal: #00020a;
+    --secundaria: #383838;
+    --branco: #FFF;
+    --preto: #000;
+}
+
+/*Tamanho Fonte*/
+html{
+    font-size: 62.5%;
+}
+
+/*Especificações Gerais*/
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+
+    font-family: 'Montserrat';
+
+    z-index: 1;
+
+    box-sizing: border-box;
+}
+
+/*Padronização do Site*/
+
+html::-webkit-scrollbar{
+    display: none;
+}
+
+body::-webkit-scrollbar{
+    width: 15px;
+
+    background-color: var(--principal);
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: var(--secundaria);
+}   
+
+h1{
+    width: 100%;
+
+    color: var(--branco);
+    font-size: 2.6rem;
+    font-weight: 500;
+
+    text-transform: uppercase;
+
+    border-top: 2px solid var(--branco);
+
+    padding-top: 20px;
+}
+
+h1::after{
+    content: "";
+
+    display: block;
+
+    height: 5px;
+    width: 200px;
+
+    background-color: var(--secundaria);
+
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+
+    margin-top: 10px;
+}
+
+button{
+    height: fit-content;
+    width: fit-content;
+
+    background-color: var(--principal);
+
+    color: var(--branco);
+    font-size: 1.6rem;
+    font-weight: 600;
+
+    border: 2px solid var(--branco);
+    border-radius: 40px;
+
+    padding: 20px 50px;
+
+    order: 4;
+}
+
+button:hover{ 
+    cursor: pointer;
+
+    background-color: var(--branco);
+
+    color: var(--principal);
+}
+
+select,
+textarea{
+    background-color: var(--secundaria);
+
+    color: var(--branco);
+    font-size: 1.6rem;
+
+    border-radius: 7px;
+
+    margin-bottom: 20px;
+
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+textarea{
+    resize: none;
+}
+
+img{
+    color: var(--branco);
+}
+
+header{
+    display: flex;
+
+    height: 100px;
+    width: 100%;
+
+    background-color: var(--principal);
+    
+    justify-content: space-evenly;
+}
+
+#dvLogo{
+    display: flex;
+
+    width: fit-content;
+
+    align-items: center;
+}
+
+#dvLogo img{
+    height: 80%;
+
+    color: var(--branco);
+    font-size: 2rem;
+}
+
+.nvPags,
+.nvPags ul,
+.nvPags ul li,
+.nvPags ul li a{
+    height: 100%;
+    width: 100%;
+}
+
+.nvPags:first-child{
+    margin-right: 60px;
+}
+
+.nvPags:last-child{
+    margin-left: 60px;
+}
+
+.nvPags ul{
+    display: flex;
+
+    justify-content: space-evenly;
+}
+
+.nvPags ul li{    
+    list-style-type: none;
+
+    border-bottom: 5px solid transparent;
+}
+
+.nvPags ul li:hover{
+    border-bottom: 5px solid var(--branco);
+}
+
+.nvPags .liSelect{
+    border-bottom: 5px solid var(--branco);
+}
+
+.nvPags ul a{
+    display: flex;
+
+    color: var(--branco);
+    font-size: 2rem;
+
+    text-decoration: none;
+
+    justify-content: center;
+    align-items: center;
+}
+
+#dvMenu,
+#dvFundoMenu{
+    display: none;
+}
+
+main{
+    height: fit-content;
+    width: 100%;
+}
+
+section{
+    height: fit-content;
+    width: 100%;
+
+    background-color: var(--principal);
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.dvContainer{
+    display: flex;
+
+    width: 1140px;
+
+    margin-inline: auto;
+}
+
+footer{
+    display: flex;
+
+    background-color: var(--principal);
+
+    border-top: 1px solid var(--branco);
+
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+footer .dvContainer{
+    display: flex;
+
+    flex-direction: column;
+}
+
+footer .dvPri{
+    display: flex;
+}
+
+footer ul{
+    display: flex;
+
+    width: 250px;
+
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+footer li{
+    display: flex;
+
+    color: var(--branco);
+    font-size: 1.8rem;
+
+    text-align: start;
+    
+    list-style-type: none;
+
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+footer li:last-child{
+    border: none;
+}
+
+footer .dvTit{
+    margin-bottom: 10px;
+
+    justify-content: center;
+}
+
+footer a{
+    color: var(--branco);
+
+    text-decoration: none;
+}
+
+footer a:hover{
+    cursor: pointer;
+
+    color: #aeaeae;
+}
+
+footer address{
+    flex: 1;
+    display: flex;
+
+    justify-content: space-between;
+}
+
+footer .dvSub{
+    display: flex;
+
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .dvSub:first-child{
+    flex: 1;
+
+    padding-top: 40px;
+    padding-right: 20px;
+}
+
+footer .dvSub:last-child{
+    width: fit-content;
+}
+
+footer .dvSub p{
+    color: var(--branco);
+    font-size: 1.4rem;
+    font-style: normal;
+
+    line-height: 3rem;
+}
+
+footer .dvSub div{
+    flex: 1;
+    display: flex;
+
+    align-items: center;
+}
+
+footer address a{
+    height: fit-content;
+}
+
+footer address img{
+    height: 30px;
+
+    filter: invert(25%);
+
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+footer .dvEx{
+    height: 35px;
+}
+
+footer address img:hover{
+    cursor: pointer;
+    
+    filter: invert(100%);
+}
+
+footer .dvSeg{
+    display: flex;
+
+    color: var(--branco);
+    font-size: 1.6rem;
+
+    padding-top: 60px;
+
+    justify-content: center;
+}
+
+@media(max-width: 1200px){
+    html{
+        font-size: 55%;
+    }
+
+    .dvContainer{
+        width: 700px;
+    }
+
+    .nvPags:first-child{
+        margin-right: 20px;
+    }
+
+    .nvPags:last-child{
+        margin-left: 20px;
+    }
+
+    footer .dvPri{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer ul{
+        width: 100%;
+
+        flex-direction: row;
+    }
+
+    footer li{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    footer address{
+        width: 100%;
+
+        margin-top: 40px;
+    }
+
+    footer .dvSub:first-child{
+        margin-bottom: 20px;
+
+        padding-right: 0px;
+
+        justify-content: space-between;
+    }
+
+    footer .dvSub:last-child{
+        width: fit-content;
+    }
+
+    footer .dvSub:last-child iframe{
+        width: 400px;
+    }
+}
+
+@media(max-width: 740px){
+    html{
+        font-size: 60%;
+    }
+
+    .dvContainer{
+        width: 300px;
+    }
+
+    header{
+        height: 150px;
+    }
+
+    header .dvContainer{
+        flex-direction: column;
+    }
+
+    header .nvPags{
+        display: none;
+    }
+
+    #dvLogo{
+        height: 100px;
+        width: 100%;
+
+        justify-content: center;
+    }
+
+    #dvLogo img{
+        height: 80%;
+    }
+
+    #dvMenu{
+        display: flex;
+
+        height: 50px;
+        width: 100%;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    #dvMenu #imgIcon{
+        height: 50px;
+        
+        filter: invert(100%);
+    }
+
+    #dvFundoMenu{
+        display: none;
+
+        height: 0px;
+        width: 100%;
+
+        background-color: var(--principal);
+
+        position: absolute;
+        top: 0;
+
+        z-index: 2;
+
+        overflow: hidden;
+
+        margin-top: 150px;
+    }
+
+    #dvFundoMenu .nvPags{
+        margin-left: 0;
+    }
+
+    #dvFundoMenu ul{
+        padding-top: 60px;
+
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    #dvFundoMenu li{
+        height: fit-content;
+
+        border-bottom: 0px;
+
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    #dvFundoMenu .liSelect{
+        border-bottom: 0px;
+
+        border-left: 2px solid var(--branco);
+    }
+
+    footer ul{
+        flex-direction: column;
+    }
+
+    footer address{
+        margin-top: 0;
+
+        flex-direction: column;
+    }
+
+    footer .dvSub:first-child p{
+        text-align: center;
+
+        margin-bottom: 10px;
+    }
+
+    footer .dvSub:last-child{
+        margin-top: 20px;
+    }
+
+    footer .dvSub:last-child iframe{
+        width: 300px;
+    }
+}

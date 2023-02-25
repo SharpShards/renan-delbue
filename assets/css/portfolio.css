@@ -1,0 +1,151 @@
+#sctBanner{
+    display: flex;
+
+    height: calc(100vh - 100px);
+
+    background: rgba(0, 0, 0, 0.8);
+    background-blend-mode: darken;
+
+    background-image: url("../images/media/bannerProj.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;    
+
+    justify-content: center;
+    align-items: center;
+}
+
+#sctBanner h1{
+    width: fit-content;
+
+    font-size: 10rem;
+    font-weight: 400;
+
+    border: none;
+}
+
+#sctBanner h1::after{
+    display: none;
+}
+
+#sctProjetos .dvContainer{
+    display: flex;
+
+    flex-direction: column;
+}
+
+#sctProjetos .dvFundo{
+    display: flex;
+
+    height: fit-content;
+    width: 100%;
+
+    flex-direction: column;
+}
+
+#sctProjetos h2{
+    color: var(--branco);
+    font-size: 3rem;
+    font-weight: 400;
+
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+#sctProjetos .dvSub{
+    display: flex;
+}
+
+#sctProjetos .dvImagem{
+    flex: 1;
+    display: flex;
+
+    height: 200px;
+
+    overflow: hidden;
+
+    justify-content: center;
+    align-items: center;
+}
+
+#sctProjetos .dvImagem:hover{
+    cursor: pointer;
+}
+
+#sctProjetos .dvAlto img{
+    height: fit-content;
+    width: 200px;
+}
+
+#sctProjetos .dvLarga img{
+    height: 200px;
+    width: fit-content;
+}
+
+#sctProjetos button{
+    margin-top: 40px;
+}
+
+#sctProjetos a{
+    margin-inline: auto;
+}
+
+#dvFundoImg{
+    display: none;
+
+    height: 100vh;
+    width: 100vw;
+
+    background: rgba(0, 0, 0, 0.8);
+    background-blend-mode: darken;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    justify-content: center;
+    align-items: center;
+}
+
+#dvFundoImg #imgImagem{
+    height: max-content;
+    
+    max-height: 80%;
+    max-width: 90%;
+}
+
+@media(max-width: 1200px){
+    #sctProjetos .dvSub{
+        display: grid;
+
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #sctProjetos .dvAlto img{
+        width: 100%;
+    }
+}
+
+@media(max-width: 740px){
+    #sctBanner h1{
+        font-size: 6rem;
+    }
+
+    #sctProjetos .dvContainer{
+        width: 100%;
+    }
+
+    #sctProjetos .dvSub{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #sctProjetos .dvSub div:nth-child(5),
+    #sctProjetos .dvSub div:nth-child(6){
+        display: none;
+    }
+
+    #sctProjetos h2{
+        font-size: 2.6rem;
+        text-align: center;
+    }
+}

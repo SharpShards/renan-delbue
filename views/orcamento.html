@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>Orçamentos | Renan Delbue</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="../assets/css/padrao.css">
+    <link rel="stylesheet" href="../assets/css/orcamento.css">
+
+    <link rel="icon" href="../assets/images/client/simbol.png">
+
+    <script src="../assets/script/orcamento.js" defer></script>
+    <script src="../assets/script/padrao.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="dvContainer">
+            <nav class="nvPags">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="views/trabalho.html">Trabalho</a></li>
+                </ul>
+            </nav>
+    
+            <div id="dvLogo">
+                <img src="../assets/images/client/logo.png" alt="Logo Renan Delbue">
+            </div>
+            
+            <nav class="nvPags">
+                <ul>
+                    <li><a href="portfolio.html">Portfólio</a></li>
+                    <li class="liSelect"><a href="orcamento.html">Orçamentos</a></li>
+                </ul>
+            </nav>
+
+            <div id="dvMenu">
+                <img id="imgIcon" src="../assets/images/icons/menu.png" alt="Menu para outras páginas">
+            </div>
+        </div>        
+    </header>
+
+    <div id="dvFundoMenu">
+        <nav class="nvPags">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="trabalho.html">Trabalho</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li class="liSelect"><a href="orcamento.html">Orçamentos</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <section id="sctBanner">
+            <h1>Orçamentos</h1>
+        </section>
+
+        <section id="sctOrcamento">
+            <div class="dvContainer">
+                <div class="dvPri">
+                    <p>
+                        Preencha o formulário abaixo com informações de contato e do seu evento.
+                        Entrarei em contato em até 3 dias após o envio para combinarmos os detalhes.
+                    </p>
+                </div>
+
+                <div class="dvSeg">                                   
+                    <form id="frmForm" method="post" action="https://formsubmit.co/renan.delbue@outlook.com" target="_blank">
+                        <h2>Descrição Do Serviço</h2>
+
+                        <input type="text" name="txtNome" placeholder="Nome" autocomplete="off" required>
+                        <input type="email" name="emEmail" placeholder="Email" autocomplete="off" required>
+                        <input type="tel" name="telTelefone" placeholder="Telefone: 12345-6789" autocomplete="off" pattern="[0-9]{5}-[0-9]{4}" required>
+
+                        <select name="sltTipo" name="sltServico">
+                            <option value="Não Especificado" selected>Escolher tipo de serviço</option>
+                            <option value="Filmagens De Shows">Filmagens De Shows</option>
+                            <option value="Casamentos">Casamentos</option>
+                            <option value="Ensaios">Ensaios</option>
+                            <option value="Aniversários">Aniversários</option>
+                            <option value="Imagens Aéreas">Imagens Aéreas</option>                                    
+                        </select>
+
+                        <textarea name="taDescricao" cols="30" rows="10" placeholder="Descreva o que deseja..." autocomplete="off"></textarea>
+
+                        <button>Enviar</button>
+                    </form>
+
+                    <div class="dvVisita">
+                        <h2>Faça uma visita ao estúdio!</h2>                        
+                        
+                        <p id="pEnder">
+                            Rio De Janeiro, Brasil
+                            <br>
+                            R. Cinco, 115-1
+                            <br>
+                            Taquara, Duque de Caxias
+                        </p>                        
+    
+                        <p id="pAviso">Visitas devem ser agendadas!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="dvContainer">
+            <div class="dvPri">
+                <ul>
+                    <li class="dvTit">Mapa do Site</li>
+
+                    <li><a href="../index.html">➤ Home</a></li>
+                    <li><a href="trabalho.html">➤ Trabalho</a></li>
+                    <li><a href="portfolio.html">➤ Portfólio</a></li>
+                    <li><a href="orcamento.html">➤ Orçamentos</a></li>
+                </ul>
+        
+                <address>
+                    <div class="dvSub">
+                        <p>
+                            Telefone: +55 (21) 98294-6732
+                            <br>
+                            Endereço: Rua Cinco, 115-1, Taquara, RJ
+                        </p>
+
+                        <div>
+                            <a href="https://web.whatsapp.com/send?phone=5521982946732" target="_blank"><img src="../assets/images/icons/whatsapp.png" alt="Ícone Whatsapp"></a>
+                            <a href="https://www.facebook.com/RenanDelbueFotografia" target="_blank"><img class="dvEx" src="../assets/images/icons/facebook.png" alt="ícone Facebook"></a>
+                            <a href="https://www.instagram.com/renandelbue/?igshid=MTg0ZDhmNDA%3D" target="_blank"><img src="../assets/images/icons/instagram.png" alt="Ícone Instagram"></a>
+                        </div>                        
+                    </div>
+
+                    <div class="dvSub">
+                        <iframe width="500" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=400&amp;height=400&amp;hl=en&amp;q=Rua%20Cinco,%20115-1,%20Taquara,%20Duque%20de%20Caxias,%20RJ+(Renan%20Delbue)&amp;t=&amp;z=18&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                    </div>
+                </address>
+            </div>
+
+            <div class="dvSeg">
+                <p>2023 © Todos os direitos reservados</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

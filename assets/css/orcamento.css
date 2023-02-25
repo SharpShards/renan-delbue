@@ -1,0 +1,186 @@
+#sctBanner{
+    display: flex;
+
+    height: calc(100vh - 100px);
+    width: 100%;
+
+    background: rgba(0, 0, 0, 0.8);
+    background-blend-mode: darken;
+
+    background-image: url("../images/media/bannerOrca.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    justify-content: center;
+    align-items: center;
+}
+
+#sctBanner h1{
+    width: fit-content;
+
+    color: var(--branco);
+    font-size: 10rem;
+    font-weight: 400;
+
+    border-top: none;
+}
+
+#sctBanner h1::after{
+    display: none;
+}
+
+#sctOrcamento .dvContainer{
+    flex-direction: column;
+}
+
+#sctOrcamento .dvPri{
+    display: flex;
+
+    height: fit-content;
+    width: 100%;
+
+    flex-direction: column;
+}
+
+#sctOrcamento .dvPri p{
+    color: var(--branco);
+    font-size: 2rem;
+    
+    text-align: justify;
+
+    line-height: 3rem;
+
+    margin-bottom: 15px;
+}
+
+#sctOrcamento .dvSeg{
+    display: flex;
+
+    margin-top: 40px;
+}
+
+#sctOrcamento .dvSeg div,
+#sctOrcamento .dvSeg form{
+    height: fit-content;
+    width: 50%;
+
+    padding: 40px;
+    padding-top: 0;
+}
+
+#sctOrcamento #frmForm{
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+}
+
+#sctOrcamento p{
+    color: var(--branco);
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+#sctOrcamento h2{
+    color: var(--branco);
+    font-size: 2.2rem;
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    margin-bottom: 40px;
+}
+
+#sctOrcamento button{   
+    margin-inline: auto;
+    margin-top: 20px;
+}
+
+#sctOrcamento button:hover{
+    font-weight: 700;
+}
+
+#sctOrcamento input{
+    height: fit-content;
+    width: 100%;
+
+    background-color: var(--secundaria);
+
+    color: var(--branco);
+    font-size: 1.6rem;
+
+    border-radius: 7px;
+
+    margin-bottom: 20px;
+
+    padding: 20px;
+}
+
+#sctOrcamento select{
+    width: 100%;
+}
+
+#sctOrcamento textarea{
+    width: 100%;
+}
+
+#sctOrcamento select::placeholder{
+    color: rgb(116, 116, 116);
+}
+
+#sctOrcamento .dvVisita{
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+}
+
+#sctOrcamento .dvVisita #pEnder{
+    line-height: 3rem;
+}
+
+#sctOrcamento .dvVisita #pAviso{
+    font-weight: 700;
+    
+    margin-top: 20px;
+}
+
+@media(max-width: 1200px){
+    #sctOrcamento .dvSeg{
+        flex-direction: column;
+    }
+
+    #sctOrcamento #frmForm{
+        width: 100%;
+    }
+
+    #sctOrcamento .dvSeg div{
+        width: 100%;
+
+        margin-top: 40px;
+
+        padding-bottom: 0;
+    }
+}
+
+@media(max-width: 740px){
+    #sctBanner{
+        height: calc(100vh - 150px);
+    }
+
+    #sctBanner h1{
+        font-size: 4rem;
+    }
+
+    #sctOrcamento #frmForm,
+    #sctOrcamento .dvSeg div{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    #sctOrcamento h2,
+    #sctOrcamento .dvVisita #pEnder{
+        text-align: center;
+    }
+}

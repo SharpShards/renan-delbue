@@ -1,0 +1,320 @@
+#sctBanner{
+    height: calc(100vh - 100px);
+
+    background-image: url("../images/media/bannerTrab.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#sctRecursos{
+    padding-bottom: 0;
+}
+
+#sctRecursos .dvContainer{
+    flex-direction: column;
+}
+
+#sctRecursos .dvFundo{
+    display: flex;
+
+    margin-top: 60px;
+
+    justify-content: space-between;
+}
+
+#sctRecursos .dvCard{
+    display: flex;
+
+    margin-left: 30px;
+    margin-right: 30px;
+
+    flex-direction: column;
+    align-items: center;
+}
+
+#sctRecursos .dvCard:first-child{
+    margin-left: 0px;
+}
+
+#sctRecursos .dvCard:last-child{
+    margin-right: 0px;
+}
+
+#sctRecursos .imgIcones{
+    height: 100px;
+    width: 100px;
+
+    filter: invert(100%)    
+}
+
+#sctRecursos h2{
+    color: var(--branco);
+    font-size: 2.4rem;
+    font-weight: 400;
+
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+#sctRecursos p{
+    color: var(--branco);
+    font-size: 2rem;
+
+    text-align: justify;
+
+    line-height: 3rem;
+}
+
+#sctServicos .dvContainer{
+    display: flex;
+
+    flex-direction: column;
+}
+
+#sctServicos .dvFundo{
+    display: flex;
+
+    height: fit-content;
+    width: 100%;
+
+    background-color: var(--principal);
+
+    margin-top: 40px;
+}
+
+#sctServicos .dvCard{
+    display: flex;
+
+    height: 300px;
+    width: 300px;
+
+    overflow: hidden;
+
+    position: relative;
+
+    justify-content: center;
+}
+
+#sctServicos .dvCard:hover{
+    cursor: pointer;
+}
+
+#sctServicos .dvCard img{
+    height: 300px;
+
+    overflow: visible;
+}
+
+#sctServicos .dvCard img:hover{
+    cursor: pointer;
+}
+
+#sctServicos .dvCard .dvSub{
+    display: flex;
+
+    height: 100%;
+    width: 100%;
+
+    background: rgba(0, 0, 0, 0.8);
+    background-blend-mode: darken;
+
+    position: absolute;
+
+    opacity: 0;
+
+    flex-direction: column;
+}
+
+#sctServicos .dvCard .dvSub h2{
+    color: var(--branco);
+    font-size: 1.4rem;
+    font-weight: 600;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    margin-top: 50px;
+}
+
+#sctServicos .dvCard .dvSub h3{
+    color: var(--branco);
+    font-size: 1.2rem;
+    font-weight: 300;
+
+    text-align: center;
+}
+
+#sctServicos .dvCard .dvSub img{
+    height: 40px;
+    width: 40px;
+
+    filter: invert(100%);
+
+    margin-top: 60px;
+    margin-inline: auto;
+}
+
+#sctServicos #dvDesc{
+    display: none;
+
+    height: 0px;
+    width: 100%;
+
+    color: var(--branco);
+    font-size: 2rem;
+
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+
+    position: relative;
+}
+
+#sctServicos #dvDesc .dvSub{
+    display: none;
+
+    height: 0px;
+    width: 100%;
+
+    opacity: 0;
+}
+
+#sctServicos .dvSubSub:nth-child(1){
+    width: 50%;
+
+    padding: 20px;
+}
+
+#sctServicos .dvSubSub:nth-child(1) h2{
+    color: var(--branco);
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+#sctServicos .dvSubSub:nth-child(1) h3{
+    color: var(--branco);
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+#sctServicos .dvSubSub:nth-child(1) p{
+    color: var(--branco);
+    font-size: 1.6rem;
+
+    line-height: 3rem;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}   
+
+#sctServicos .dvSubSub:nth-child(1) li{
+    display: flex;
+
+    color: var(--branco);
+    font-size: 1.6rem;
+    
+    list-style: none;
+
+    margin-bottom: 15px;
+
+    align-items: center;
+}
+
+#sctServicos .dvSubSub:nth-child(1) img{
+    height: 15px;
+
+    filter: invert(100%);
+
+    margin-right: 10px;
+}
+
+#sctServicos .dvSubSub:nth-child(1) button{
+    margin-top: 20px;
+}
+
+#sctServicos .dvSubSub:nth-child(2){
+    display: flex;
+
+    width: 50%;
+
+    overflow: hidden;
+
+    justify-content: end;
+}
+
+#sctServicos .dvSubSub:nth-child(2) video{
+    height: 100%;
+}
+
+@media(max-width: 1200px){
+    #sctRecursos .dvFundo{
+        flex-direction: column;
+    }
+
+    #sctRecursos .dvCard{
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 60px;
+    }
+
+    #sctServicos .dvFundo{
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 0px;
+    }
+
+    #sctServicos .dvCard{
+        width: 100%;
+    }
+
+    #sctServicos .dvCard img{
+        height:fit-content;
+        width: 100%;
+    }
+
+    #sctServicos .dvCard:nth-child(1) img:nth-child(1),
+    #sctServicos .dvCard:nth-child(3) img:nth-child(1){
+        height:100%;
+        width: fit-content;
+    }
+
+    #sctServicos .dvCard .dvSub h2{
+        font-size: 2.5rem;
+    }
+
+    #sctServicos .dvCard .dvSub h3{
+        font-size: 1.8rem;
+    }
+
+    #sctServicos .dvSubSub:nth-child(2){
+        justify-content: center;
+    }
+}
+
+@media(max-width: 740px){
+    #sctBanner{
+        height: calc(100vh - 150px);
+    }
+
+    #sctServicos .dvFundo{
+        display: flex;
+
+        flex-direction: column;
+    }
+
+    #sctServicos #dvDesc .dvSub{
+        display: flex;
+
+        flex-direction: column;
+    }
+
+    #sctServicos .dvSubSub:nth-child(1),
+    #sctServicos .dvSubSub:nth-child(2){
+        width: 100%;
+    }
+
+    #sctServicos .dvSubSub:nth-child(2){
+        height: 300px;
+    }
+}
