@@ -147,6 +147,27 @@
     height: 500px;
 }
 
+#dvCreditos{
+    display: flex;
+    display: none;
+
+    height: 100vh;
+    width: 100vw;
+
+    background-color: #000;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    justify-content: center;
+    align-items: center;
+}
+
+#dvCreditos img{
+    width: 200px;
+}
+
 @media(max-width: 1200px){
     #sctQuemSou .dvPri{
         flex-direction: column;
